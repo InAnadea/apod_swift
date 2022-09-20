@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CC55DE428D4AC8600CEAF63 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE328D4AC8600CEAF63 /* APODViewModel.swift */; };
+		2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */; };
+		2CC55DE828D4B94000CEAF63 /* APODRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */; };
+		2CC55DEC28D4BB6A00CEAF63 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DEB28D4BB6A00CEAF63 /* DI.swift */; };
 		2CE8712728D328CF0054C52A /* Nasa_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712628D328CF0054C52A /* Nasa_APODApp.swift */; };
-		2CE8712928D328CF0054C52A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712828D328CF0054C52A /* ContentView.swift */; };
+		2CE8712928D328CF0054C52A /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712828D328CF0054C52A /* APODView.swift */; };
 		2CE8712B28D328D10054C52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8712A28D328D10054C52A /* Assets.xcassets */; };
 		2CE8712E28D328D10054C52A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8712D28D328D10054C52A /* Preview Assets.xcassets */; };
+		2CE8713628D45D1B0054C52A /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8713528D45D1B0054C52A /* APOD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CC55DE328D4AC8600CEAF63 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRepository.swift; sourceTree = "<group>"; };
+		2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRepositoryImpl.swift; sourceTree = "<group>"; };
+		2CC55DEB28D4BB6A00CEAF63 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		2CE8712328D328CF0054C52A /* Nasa APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE8712628D328CF0054C52A /* Nasa_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_APODApp.swift; sourceTree = "<group>"; };
-		2CE8712828D328CF0054C52A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CE8712828D328CF0054C52A /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
 		2CE8712A28D328D10054C52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CE8712D28D328D10054C52A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CE8713528D45D1B0054C52A /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CC55DE928D4B98C00CEAF63 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */,
+				2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2CC55DEA28D4BB5A00CEAF63 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				2CC55DEB28D4BB6A00CEAF63 /* DI.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		2CE8711A28D328CF0054C52A = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +78,11 @@
 		2CE8712528D328CF0054C52A /* Nasa APOD */ = {
 			isa = PBXGroup;
 			children = (
+				2CC55DEA28D4BB5A00CEAF63 /* DI */,
+				2CC55DE928D4B98C00CEAF63 /* Repositories */,
+				2CE8713428D45CCE0054C52A /* Models */,
 				2CE8712628D328CF0054C52A /* Nasa_APODApp.swift */,
-				2CE8712828D328CF0054C52A /* ContentView.swift */,
+				2CE8712828D328CF0054C52A /* APODView.swift */,
 				2CE8712A28D328D10054C52A /* Assets.xcassets */,
 				2CE8712C28D328D10054C52A /* Preview Content */,
 			);
@@ -65,6 +95,15 @@
 				2CE8712D28D328D10054C52A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CE8713428D45CCE0054C52A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CE8713528D45D1B0054C52A /* APOD.swift */,
+				2CC55DE328D4AC8600CEAF63 /* APODViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE8712928D328CF0054C52A /* ContentView.swift in Sources */,
+				2CE8712928D328CF0054C52A /* APODView.swift in Sources */,
 				2CE8712728D328CF0054C52A /* Nasa_APODApp.swift in Sources */,
+				2CC55DE428D4AC8600CEAF63 /* APODViewModel.swift in Sources */,
+				2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */,
+				2CE8713628D45D1B0054C52A /* APOD.swift in Sources */,
+				2CC55DE828D4B94000CEAF63 /* APODRepositoryImpl.swift in Sources */,
+				2CC55DEC28D4BB6A00CEAF63 /* DI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
