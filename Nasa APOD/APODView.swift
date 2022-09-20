@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @ObservedObject var apodViewModel = APODViewModel()
+struct APODView: View {
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         ScrollView {
             VStack(alignment: .center) {
-                if let uri = apodViewModel.currentApod?.hdurl {
+                if let uri = viewModel.currentApod?.hdurl {
                     AsyncImage(url: URL(string: uri)) { phase in
                         switch phase {
                         case .empty:
@@ -35,24 +35,24 @@ struct ContentView: View {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle())
                 }
-                if let text = apodViewModel.currentApod?.title {
+                if let text = viewModel.currentApod?.title {
                     Text(text)
                         .font(.largeTitle)
                         .padding()
                 }
-                if let text = apodViewModel.currentApod?.explanation {
+                if let text = viewModel.currentApod?.explanation {
                     Text(text).padding()
                 }
             }
             
         }
-        .onAppear(perform: { apodViewModel.getApod() })
+        .onAppear(perform: { viewModel.getApod() })
         .edgesIgnoringSafeArea(.top)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        APODView()
     }
 }

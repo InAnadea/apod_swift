@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APOD: Decodable {
+struct APOD: Codable {
 //    var copyright: String?
 //    var date: Date?
     var explanation: String?
