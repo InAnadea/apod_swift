@@ -11,7 +11,7 @@
 		2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */; };
 		2CC55DE828D4B94000CEAF63 /* APODRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */; };
 		2CC55DEC28D4BB6A00CEAF63 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DEB28D4BB6A00CEAF63 /* DI.swift */; };
-		2CE8712728D328CF0054C52A /* Nasa_APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712628D328CF0054C52A /* Nasa_APODApp.swift */; };
+		2CE8712728D328CF0054C52A /* NASA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712628D328CF0054C52A /* NASA.swift */; };
 		2CE8712928D328CF0054C52A /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712828D328CF0054C52A /* APODView.swift */; };
 		2CE8712B28D328D10054C52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8712A28D328D10054C52A /* Assets.xcassets */; };
 		2CE8712E28D328D10054C52A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8712D28D328D10054C52A /* Preview Assets.xcassets */; };
@@ -23,8 +23,8 @@
 		2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRepository.swift; sourceTree = "<group>"; };
 		2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRepositoryImpl.swift; sourceTree = "<group>"; };
 		2CC55DEB28D4BB6A00CEAF63 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
-		2CE8712328D328CF0054C52A /* Nasa APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa APOD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CE8712628D328CF0054C52A /* Nasa_APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_APODApp.swift; sourceTree = "<group>"; };
+		2CE8712328D328CF0054C52A /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE8712628D328CF0054C52A /* NASA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA.swift; sourceTree = "<group>"; };
 		2CE8712828D328CF0054C52A /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
 		2CE8712A28D328D10054C52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CE8712D28D328D10054C52A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -42,6 +42,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CAA4E2F28DC47E600784F41 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA4E3128DC488600784F41 /* Views */,
+				2CC55DE928D4B98C00CEAF63 /* Repositories */,
+				2CE8713428D45CCE0054C52A /* Models */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		2CAA4E3028DC485C00784F41 /* Mars Rover Photos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Mars Rover Photos";
+			sourceTree = "<group>";
+		};
+		2CAA4E3128DC488600784F41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CE8712828D328CF0054C52A /* APODView.swift */,
+				2CC55DE328D4AC8600CEAF63 /* APODView-ViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2CC55DE928D4B98C00CEAF63 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +88,7 @@
 		2CE8711A28D328CF0054C52A = {
 			isa = PBXGroup;
 			children = (
-				2CE8712528D328CF0054C52A /* Nasa APOD */,
+				2CE8712528D328CF0054C52A /* NASA */,
 				2CE8712428D328CF0054C52A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,24 +96,22 @@
 		2CE8712428D328CF0054C52A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CE8712328D328CF0054C52A /* Nasa APOD.app */,
+				2CE8712328D328CF0054C52A /* NASA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CE8712528D328CF0054C52A /* Nasa APOD */ = {
+		2CE8712528D328CF0054C52A /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				2CAA4E3028DC485C00784F41 /* Mars Rover Photos */,
+				2CAA4E2F28DC47E600784F41 /* APOD */,
 				2CC55DEA28D4BB5A00CEAF63 /* DI */,
-				2CC55DE928D4B98C00CEAF63 /* Repositories */,
-				2CE8713428D45CCE0054C52A /* Models */,
-				2CE8712628D328CF0054C52A /* Nasa_APODApp.swift */,
-				2CE8712828D328CF0054C52A /* APODView.swift */,
-				2CC55DE328D4AC8600CEAF63 /* APODView-ViewModel.swift */,
+				2CE8712628D328CF0054C52A /* NASA.swift */,
 				2CE8712A28D328D10054C52A /* Assets.xcassets */,
 				2CE8712C28D328D10054C52A /* Preview Content */,
 			);
-			path = "Nasa APOD";
+			path = NASA;
 			sourceTree = "<group>";
 		};
 		2CE8712C28D328D10054C52A /* Preview Content */ = {
@@ -109,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2CE8712228D328CF0054C52A /* Nasa APOD */ = {
+		2CE8712228D328CF0054C52A /* NASA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2CE8713128D328D10054C52A /* Build configuration list for PBXNativeTarget "Nasa APOD" */;
+			buildConfigurationList = 2CE8713128D328D10054C52A /* Build configuration list for PBXNativeTarget "NASA" */;
 			buildPhases = (
 				2CE8711F28D328CF0054C52A /* Sources */,
 				2CE8712028D328CF0054C52A /* Frameworks */,
@@ -121,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = "Nasa APOD";
+			name = NASA;
 			productName = "Nasa APOD";
-			productReference = 2CE8712328D328CF0054C52A /* Nasa APOD.app */;
+			productReference = 2CE8712328D328CF0054C52A /* NASA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2CE8711E28D328CF0054C52A /* Build configuration list for PBXProject "Nasa APOD" */;
+			buildConfigurationList = 2CE8711E28D328CF0054C52A /* Build configuration list for PBXProject "NASA" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CE8712228D328CF0054C52A /* Nasa APOD */,
+				2CE8712228D328CF0054C52A /* NASA */,
 			);
 		};
 /* End PBXProject section */
@@ -177,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE8712928D328CF0054C52A /* APODView.swift in Sources */,
-				2CE8712728D328CF0054C52A /* Nasa_APODApp.swift in Sources */,
+				2CE8712728D328CF0054C52A /* NASA.swift in Sources */,
 				2CC55DE428D4AC8600CEAF63 /* APODView-ViewModel.swift in Sources */,
 				2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */,
 				2CE8713628D45D1B0054C52A /* APOD.swift in Sources */,
@@ -310,10 +334,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Nasa APOD/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NASA/Preview Content\"";
 				DEVELOPMENT_TEAM = 5KN774B3TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NASA;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,8 +350,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.Nasa-APOD";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivan.nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,10 +368,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Nasa APOD/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NASA/Preview Content\"";
 				DEVELOPMENT_TEAM = 5KN774B3TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = NASA;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -353,8 +384,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.Nasa-APOD";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivan.nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2CE8711E28D328CF0054C52A /* Build configuration list for PBXProject "Nasa APOD" */ = {
+		2CE8711E28D328CF0054C52A /* Build configuration list for PBXProject "NASA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CE8712F28D328D10054C52A /* Debug */,
@@ -373,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2CE8713128D328D10054C52A /* Build configuration list for PBXNativeTarget "Nasa APOD" */ = {
+		2CE8713128D328D10054C52A /* Build configuration list for PBXNativeTarget "NASA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2CE8713228D328D10054C52A /* Debug */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Nasa_APODApp: App {
+struct NASA: App {
     var body: some Scene {
         WindowGroup {
             APODView()
