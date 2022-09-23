@@ -44,10 +44,8 @@ struct APODView: View {
                     Text(text).padding()
                 }
             }
-            
         }
         .onAppear(perform: { viewModel.getApod() })
-        .edgesIgnoringSafeArea(.top)
     }
 }
 

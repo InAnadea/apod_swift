@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CAA4E3428DC91B100784F41 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3328DC91B100784F41 /* Configuration.swift */; };
+		2CAA4E3728DC934B00784F41 /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */; };
+		2CAA4E3A28DC951C00784F41 /* MarsRoverPhotosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3928DC951C00784F41 /* MarsRoverPhotosRepository.swift */; };
+		2CAA4E3D28DC9B0100784F41 /* MarsRoverPhotosView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3C28DC9B0100784F41 /* MarsRoverPhotosView-ViewModel.swift */; };
+		2CAA4E3F28DC9B6400784F41 /* MarsRoverPhotosRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3E28DC9B6400784F41 /* MarsRoverPhotosRepositoryImpl.swift */; };
+		2CAA4E4228DC9F8600784F41 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E4128DC9F8600784F41 /* NetworkErrors.swift */; };
+		2CAA4E4428DDD1DD00784F41 /* RoverPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E4328DDD1DD00784F41 /* RoverPhotos.swift */; };
 		2CC55DE428D4AC8600CEAF63 /* APODView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE328D4AC8600CEAF63 /* APODView-ViewModel.swift */; };
 		2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */; };
 		2CC55DE828D4B94000CEAF63 /* APODRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */; };
 		2CC55DEC28D4BB6A00CEAF63 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC55DEB28D4BB6A00CEAF63 /* DI.swift */; };
-		2CE8712728D328CF0054C52A /* NASA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712628D328CF0054C52A /* NASA.swift */; };
+		2CE8712728D328CF0054C52A /* NASA_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712628D328CF0054C52A /* NASA_App.swift */; };
 		2CE8712928D328CF0054C52A /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8712828D328CF0054C52A /* APODView.swift */; };
 		2CE8712B28D328D10054C52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8712A28D328D10054C52A /* Assets.xcassets */; };
 		2CE8712E28D328D10054C52A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8712D28D328D10054C52A /* Preview Assets.xcassets */; };
@@ -19,12 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CAA4E3228DC916100784F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2CAA4E3328DC91B100784F41 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
+		2CAA4E3928DC951C00784F41 /* MarsRoverPhotosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosRepository.swift; sourceTree = "<group>"; };
+		2CAA4E3C28DC9B0100784F41 /* MarsRoverPhotosView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarsRoverPhotosView-ViewModel.swift"; sourceTree = "<group>"; };
+		2CAA4E3E28DC9B6400784F41 /* MarsRoverPhotosRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosRepositoryImpl.swift; sourceTree = "<group>"; };
+		2CAA4E4128DC9F8600784F41 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		2CAA4E4328DDD1DD00784F41 /* RoverPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotos.swift; sourceTree = "<group>"; };
 		2CC55DE328D4AC8600CEAF63 /* APODView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APODView-ViewModel.swift"; sourceTree = "<group>"; };
 		2CC55DE528D4B88A00CEAF63 /* APODRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRepository.swift; sourceTree = "<group>"; };
 		2CC55DE728D4B94000CEAF63 /* APODRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRepositoryImpl.swift; sourceTree = "<group>"; };
 		2CC55DEB28D4BB6A00CEAF63 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		2CE8712328D328CF0054C52A /* NASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CE8712628D328CF0054C52A /* NASA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA.swift; sourceTree = "<group>"; };
+		2CE8712628D328CF0054C52A /* NASA_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_App.swift; sourceTree = "<group>"; };
 		2CE8712828D328CF0054C52A /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
 		2CE8712A28D328D10054C52A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CE8712D28D328D10054C52A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -55,6 +70,9 @@
 		2CAA4E3028DC485C00784F41 /* Mars Rover Photos */ = {
 			isa = PBXGroup;
 			children = (
+				2CAA4E3B28DC954000784F41 /* Models */,
+				2CAA4E3828DC94FB00784F41 /* Repositories */,
+				2CAA4E3528DC931E00784F41 /* Views */,
 			);
 			path = "Mars Rover Photos";
 			sourceTree = "<group>";
@@ -66,6 +84,40 @@
 				2CC55DE328D4AC8600CEAF63 /* APODView-ViewModel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2CAA4E3528DC931E00784F41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */,
+				2CAA4E3C28DC9B0100784F41 /* MarsRoverPhotosView-ViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CAA4E3828DC94FB00784F41 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA4E3928DC951C00784F41 /* MarsRoverPhotosRepository.swift */,
+				2CAA4E3E28DC9B6400784F41 /* MarsRoverPhotosRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2CAA4E3B28DC954000784F41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA4E4328DDD1DD00784F41 /* RoverPhotos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CAA4E4028DC9F6D00784F41 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2CAA4E4128DC9F8600784F41 /* NetworkErrors.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		2CC55DE928D4B98C00CEAF63 /* Repositories */ = {
@@ -104,12 +156,15 @@
 		2CE8712528D328CF0054C52A /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				2CAA4E3228DC916100784F41 /* Info.plist */,
+				2CAA4E4028DC9F6D00784F41 /* Networking */,
 				2CAA4E3028DC485C00784F41 /* Mars Rover Photos */,
 				2CAA4E2F28DC47E600784F41 /* APOD */,
 				2CC55DEA28D4BB5A00CEAF63 /* DI */,
-				2CE8712628D328CF0054C52A /* NASA.swift */,
+				2CE8712628D328CF0054C52A /* NASA_App.swift */,
 				2CE8712A28D328D10054C52A /* Assets.xcassets */,
 				2CE8712C28D328D10054C52A /* Preview Content */,
+				2CAA4E3328DC91B100784F41 /* Configuration.swift */,
 			);
 			path = NASA;
 			sourceTree = "<group>";
@@ -201,11 +256,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE8712928D328CF0054C52A /* APODView.swift in Sources */,
-				2CE8712728D328CF0054C52A /* NASA.swift in Sources */,
+				2CE8712728D328CF0054C52A /* NASA_App.swift in Sources */,
+				2CAA4E3F28DC9B6400784F41 /* MarsRoverPhotosRepositoryImpl.swift in Sources */,
 				2CC55DE428D4AC8600CEAF63 /* APODView-ViewModel.swift in Sources */,
 				2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */,
 				2CE8713628D45D1B0054C52A /* APOD.swift in Sources */,
+				2CAA4E4428DDD1DD00784F41 /* RoverPhotos.swift in Sources */,
+				2CAA4E3D28DC9B0100784F41 /* MarsRoverPhotosView-ViewModel.swift in Sources */,
+				2CAA4E3728DC934B00784F41 /* MarsRoverPhotosView.swift in Sources */,
+				2CAA4E4228DC9F8600784F41 /* NetworkErrors.swift in Sources */,
+				2CAA4E3A28DC951C00784F41 /* MarsRoverPhotosRepository.swift in Sources */,
 				2CC55DE828D4B94000CEAF63 /* APODRepositoryImpl.swift in Sources */,
+				2CAA4E3428DC91B100784F41 /* Configuration.swift in Sources */,
 				2CC55DEC28D4BB6A00CEAF63 /* DI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +400,7 @@
 				DEVELOPMENT_TEAM = 5KN774B3TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NASA/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NASA;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -372,6 +435,7 @@
 				DEVELOPMENT_TEAM = 5KN774B3TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NASA/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NASA;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

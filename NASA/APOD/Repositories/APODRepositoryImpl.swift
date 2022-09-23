@@ -20,13 +20,24 @@ extension InjectedValues {
 
 struct APODRepositoryImpl: APODRepository {
     func getAPOD() async throws -> APOD? {
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=noMUwsMNFPp7gjdXZIzi7TBHSgxuF6ZHZMa7OYbh")!
-        let (data,_) = try await URLSession.shared.data(from: url)
-        if let imageModel = try? JSONDecoder().decode(APOD.self, from: data) {
-            return imageModel
-        } else {
-            print("Invalid Response")
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "api.nasa.gov"
+        urlComponents.path = "/planetary/apod"
+        urlComponents.queryItems = [
+            URLQueryItem(name: "api_key", value: Configuration.NASA_API_Key),
+        ]
+        let url = URL(string: urlComponents.string!)!
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw IncorrectFormatOfReponseError()
         }
-        return nil
+        guard httpResponse.statusCode == 200 else {
+            throw UnexpectedResponseCodeError(code: httpResponse.statusCode)
+        }
+        guard let imageModel = try? JSONDecoder().decode(APOD.self, from: data) else {
+            throw NetworkParseError<APOD>()
+        }
+        return imageModel
     }
 }
