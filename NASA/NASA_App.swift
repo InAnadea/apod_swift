@@ -11,17 +11,8 @@ import SwiftUI
 struct NASA_App: App {
     var body: some Scene {
         WindowGroup {
-            TabView{
-                MarsRoverPhotosView()
-                    .tabItem {
-                        Label("Mars Rover Photos", systemImage: "binoculars")
-                    }
-                
-                APODView()
-                    .tabItem {
-                        Label("APOD", image: "sparkles")
-                    }
-                
+            NavigationView {
+                HomeView()
             }
         }
     }

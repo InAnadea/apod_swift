@@ -36,7 +36,6 @@ class MarsRoverPhotosRepositoryImpl: MarsRoverPhotosRepository {
         if page != nil {
             urlComponents.queryItems?.append(URLQueryItem(name: "page", value: String(page!)))
         }
-        print(urlComponents.string)
         let url = URL(string: urlComponents.string!)!
         let (data, response) = try await URLSession.shared.data(from: url)
         guard let httpResponse = response as? HTTPURLResponse else {

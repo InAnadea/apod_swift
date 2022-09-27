@@ -9,7 +9,7 @@ import Foundation
 
 extension APODView {
     @MainActor class ViewModel: ObservableObject {
-        @Injected(\.networkProvider) private var apodRepo: APODRepository
+        @Injected(\.apodRepository) private var apodRepo: APODRepository
         
         @Published private(set) var currentApod: APOD?
         

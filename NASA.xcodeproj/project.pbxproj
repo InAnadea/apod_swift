@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3824F228E1BE2100453067 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F128E1BE2100453067 /* HomeView.swift */; };
+		2C3824F428E1BE4400453067 /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F328E1BE4400453067 /* HomeView-ViewModel.swift */; };
+		2C3824F628E2DA3600453067 /* RoverPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F528E2DA3600453067 /* RoverPhotoView.swift */; };
 		2CAA4E3428DC91B100784F41 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3328DC91B100784F41 /* Configuration.swift */; };
 		2CAA4E3728DC934B00784F41 /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */; };
 		2CAA4E3A28DC951C00784F41 /* MarsRoverPhotosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3928DC951C00784F41 /* MarsRoverPhotosRepository.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3824F128E1BE2100453067 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2C3824F328E1BE4400453067 /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
+		2C3824F528E2DA3600453067 /* RoverPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoView.swift; sourceTree = "<group>"; };
 		2CAA4E3228DC916100784F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2CAA4E3328DC91B100784F41 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3824EF28E1BE0800453067 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2C3824F028E1BE1200453067 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2C3824F028E1BE1200453067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C3824F128E1BE2100453067 /* HomeView.swift */,
+				2C3824F328E1BE4400453067 /* HomeView-ViewModel.swift */,
+				2C3824F528E2DA3600453067 /* RoverPhotoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2CAA4E2F28DC47E600784F41 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +180,7 @@
 		2CE8712528D328CF0054C52A /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				2C3824EF28E1BE0800453067 /* Home */,
 				2CAA4E3228DC916100784F41 /* Info.plist */,
 				2CAA4E4028DC9F6D00784F41 /* Networking */,
 				2CAA4E3028DC485C00784F41 /* Mars Rover Photos */,
@@ -255,14 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3824F428E1BE4400453067 /* HomeView-ViewModel.swift in Sources */,
 				2CE8712928D328CF0054C52A /* APODView.swift in Sources */,
 				2CE8712728D328CF0054C52A /* NASA_App.swift in Sources */,
 				2CAA4E3F28DC9B6400784F41 /* MarsRoverPhotosRepositoryImpl.swift in Sources */,
+				2C3824F228E1BE2100453067 /* HomeView.swift in Sources */,
 				2CC55DE428D4AC8600CEAF63 /* APODView-ViewModel.swift in Sources */,
 				2CC55DE628D4B88A00CEAF63 /* APODRepository.swift in Sources */,
 				2CE8713628D45D1B0054C52A /* APOD.swift in Sources */,
 				2CAA4E4428DDD1DD00784F41 /* RoverPhotos.swift in Sources */,
 				2CAA4E3D28DC9B0100784F41 /* MarsRoverPhotosView-ViewModel.swift in Sources */,
+				2C3824F628E2DA3600453067 /* RoverPhotoView.swift in Sources */,
 				2CAA4E3728DC934B00784F41 /* MarsRoverPhotosView.swift in Sources */,
 				2CAA4E4228DC9F8600784F41 /* NetworkErrors.swift in Sources */,
 				2CAA4E3A28DC951C00784F41 /* MarsRoverPhotosRepository.swift in Sources */,

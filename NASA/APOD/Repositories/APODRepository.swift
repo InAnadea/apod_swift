@@ -8,5 +8,5 @@
 import Foundation
 
 protocol APODRepository {
-    func getAPOD() async throws -> APOD?
+    func getAPOD() async throws -> APOD
 }

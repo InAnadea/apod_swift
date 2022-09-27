@@ -8,12 +8,12 @@
 import Foundation
 
 struct APOD: Codable {
-//    var copyright: String?
-//    var date: Date?
+    var copyright: String?
+    var date: String?
     var explanation: String?
     var hdurl: String?
-//    var mediaType: String?
-//    var serviceVersion: String?
+    var mediaType: String?
+    var serviceVersion: String?
     var title: String?
-//    var url: String?
+    var url: String?
 }

@@ -28,6 +28,7 @@ struct MarsRoverPhotosView: View {
                         EmptyView()
                     }
                 }
+                .listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             }
             
             if viewModel.roverPhotos.photos.isEmpty && viewModel.isLastPage {
@@ -39,6 +40,8 @@ struct MarsRoverPhotosView: View {
                     .onAppear(perform: { viewModel.getNextPage() })
             }
         }
+        .listStyle(PlainListStyle())
+        .navigationTitle(Text("Mars rover photos"))
     }
 }
 

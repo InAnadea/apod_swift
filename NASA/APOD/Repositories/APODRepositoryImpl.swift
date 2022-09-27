@@ -12,14 +12,14 @@ private struct APODRepositoryKey: InjectionKey {
 }
 
 extension InjectedValues {
-    var networkProvider: APODRepository {
+    var apodRepository: APODRepository {
         get { Self[APODRepositoryKey.self] }
         set { Self[APODRepositoryKey.self] = newValue }
     }
 }
 
 struct APODRepositoryImpl: APODRepository {
-    func getAPOD() async throws -> APOD? {
+    func getAPOD() async throws -> APOD {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
         urlComponents.host = "api.nasa.gov"
