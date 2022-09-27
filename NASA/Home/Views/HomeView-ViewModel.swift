@@ -18,8 +18,7 @@ extension HomeView {
         func getApod() {
             Task {
                 do {
-                    let res = try await apodRepo.getAPOD()
-                    currentApod = res
+                    currentApod = try await apodRepo.getAPOD()
                 } catch {
                     print(error)
                 }

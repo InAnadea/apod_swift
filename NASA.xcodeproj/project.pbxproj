@@ -10,6 +10,7 @@
 		2C3824F228E1BE2100453067 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F128E1BE2100453067 /* HomeView.swift */; };
 		2C3824F428E1BE4400453067 /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F328E1BE4400453067 /* HomeView-ViewModel.swift */; };
 		2C3824F628E2DA3600453067 /* RoverPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F528E2DA3600453067 /* RoverPhotoView.swift */; };
+		2C3824F828E3034700453067 /* APODMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3824F728E3034700453067 /* APODMediaView.swift */; };
 		2CAA4E3428DC91B100784F41 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3328DC91B100784F41 /* Configuration.swift */; };
 		2CAA4E3728DC934B00784F41 /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */; };
 		2CAA4E3A28DC951C00784F41 /* MarsRoverPhotosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA4E3928DC951C00784F41 /* MarsRoverPhotosRepository.swift */; };
@@ -32,6 +33,8 @@
 		2C3824F128E1BE2100453067 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2C3824F328E1BE4400453067 /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
 		2C3824F528E2DA3600453067 /* RoverPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoView.swift; sourceTree = "<group>"; };
+		2C3824F728E3034700453067 /* APODMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODMediaView.swift; sourceTree = "<group>"; };
+		2C3824F928E305B500453067 /* NASA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NASA.entitlements; sourceTree = "<group>"; };
 		2CAA4E3228DC916100784F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2CAA4E3328DC91B100784F41 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		2CAA4E3628DC934B00784F41 /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 			children = (
 				2CE8712828D328CF0054C52A /* APODView.swift */,
 				2CC55DE328D4AC8600CEAF63 /* APODView-ViewModel.swift */,
+				2C3824F728E3034700453067 /* APODMediaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +184,7 @@
 		2CE8712528D328CF0054C52A /* NASA */ = {
 			isa = PBXGroup;
 			children = (
+				2C3824F928E305B500453067 /* NASA.entitlements */,
 				2C3824EF28E1BE0800453067 /* Home */,
 				2CAA4E3228DC916100784F41 /* Info.plist */,
 				2CAA4E4028DC9F6D00784F41 /* Networking */,
@@ -297,6 +302,7 @@
 				2CC55DE828D4B94000CEAF63 /* APODRepositoryImpl.swift in Sources */,
 				2CAA4E3428DC91B100784F41 /* Configuration.swift in Sources */,
 				2CC55DEC28D4BB6A00CEAF63 /* DI.swift in Sources */,
+				2C3824F828E3034700453067 /* APODMediaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NASA/NASA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NASA/Preview Content\"";
@@ -443,8 +450,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ivan.nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -457,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NASA/NASA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NASA/Preview Content\"";
@@ -478,8 +486,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ivan.nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
